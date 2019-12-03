@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Majesti-Banner"; }
+
+body {
+  background-color: #171717; }
+
 h1 {
-  color: #C54E4E; }
+  color: #C54E4E;
+  font-family: "Majesti Banner", "serif";
+  text-transform: uppercase; }
 

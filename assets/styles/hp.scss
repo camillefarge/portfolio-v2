@@ -1,3 +1,17 @@
+//FONTS
+@font-face {
+        font-family: "Majesti-Banner";
+        // src: url('/font/majesti-banner/Majesti-Banner-Heavy.otf');
+        // src: url('./font/avenir/AvenirLTStd-Black.otf');
+}
+
+body {
+    background-color: $black;
+}
+
+
 h1 {
     color: $primary-color;
+    font-family: $primary-font;
+    text-transform: uppercase;;
 }
