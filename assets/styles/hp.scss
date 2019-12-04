@@ -1,6 +1,6 @@
 .slide {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 38px);
 }
 
 .wrapper {
@@ -15,10 +15,10 @@
   // background-color: rgb(197, 35, 35);
 }
 .two {
-  background-color: rgb(79, 43, 207);
+  // background-color: rgb(79, 43, 207);
 }
 .three {
-  background-color: rgb(29, 170, 71);
+  // background-color: rgb(29, 170, 71);
 }
 
 .outer-wrapper {
@@ -41,14 +41,17 @@
 body {
   background-color: $black;
 
-  
   nav {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     margin-top: 2rem;
+    // position: relative;
+    // position: fixed;
 
     img {
       margin-left: 10rem;
+      position: fixed;
+      left: 0;
     }
 
     ul {
@@ -56,6 +59,8 @@ body {
       list-style: none;
       display: inline;
       margin-right: 10rem;
+      position: fixed;
+      right: 0;
     }
 
     ul li {
@@ -70,9 +75,10 @@ body {
 
 
   }
+  
 
   .one  {
-
+  
     .title {
       height: 80vh;
       display: flex;
@@ -109,22 +115,32 @@ body {
       color: $secondary-color;
     }
   
+    a {
+      font-family: $secondary-font;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $primary-color;
+      display: block;
+      text-align: center;
+  
+      &:after {
+        content: url("/assets/img/icon/icon_arrow.png");
+        position: relative;
+        left: 10px;
+        top: 2px;
+      }
+    }
   }
   
 
-  a {
-    font-family: $secondary-font;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: $primary-color;
-    display: block;
-    text-align: center;
-
-    &:after {
-      content: url("/assets/img/icon/icon_arrow.png");
-      position: relative;
-      left: 10px;
-      top: 2px;
+  .two {
+    .work-wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+
+  
 }

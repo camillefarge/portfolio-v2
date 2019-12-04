@@ -11,7 +11,7 @@ body {
 
 .slide {
   width: 100vw;
-  height: 100vh; }
+  height: calc(100vh - 38px); }
 
 .wrapper {
   display: flex;
@@ -19,12 +19,6 @@ body {
   width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left; }
-
-.two {
-  background-color: #4f2bcf; }
-
-.three {
-  background-color: #1daa47; }
 
 .outer-wrapper {
   width: 100vh;
@@ -43,16 +37,18 @@ body {
 body {
   background-color: #171717; }
   body nav {
-    display: flex;
-    justify-content: space-between;
     margin-top: 2rem; }
     body nav img {
-      margin-left: 10rem; }
+      margin-left: 10rem;
+      position: fixed;
+      left: 0; }
     body nav ul {
       color: white;
       list-style: none;
       display: inline;
-      margin-right: 10rem; }
+      margin-right: 10rem;
+      position: fixed;
+      right: 0; }
     body nav ul li {
       display: inline;
       margin-right: 5rem;
@@ -88,16 +84,21 @@ body {
     font-size: 35px;
     font-family: "Majesti-Banner", "serif";
     color: #BEC3F7; }
-  body a {
+  body .one a {
     font-family: "Avenir";
     font-size: 1.2rem;
     text-decoration: none;
     color: #C54E4E;
     display: block;
     text-align: center; }
-    body a:after {
+    body .one a:after {
       content: url("/assets/img/icon/icon_arrow.png");
       position: relative;
       left: 10px;
       top: 2px; }
+  body .two .work-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
