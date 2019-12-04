@@ -1,17 +1,132 @@
-//FONTS
-@font-face {
-        font-family: "Majesti-Banner";
-        // src: url('/font/majesti-banner/Majesti-Banner-Heavy.otf');
-        // src: url('./font/avenir/AvenirLTStd-Black.otf');
+.slide {
+  width: 100vw;
+  height: 100vh;
 }
 
-body {
-    background-color: $black;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw; //value is equal to total width of the content
+  transform:rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.one {
+  background-color: rgb(197, 35, 35);
+}
+.two {
+  background-color: rgb(79, 43, 207);
+  
+}
+.three {
+  background-color: rgb(29, 170, 71);
 }
 
 
-h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    text-transform: uppercase;;
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform:rotate(-90deg) translateX(-100vh);
+  
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style:none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+
+// body {
+//     font-family: "Majesti Banner", "serif"; 
+//     background-color: $black;
+//     // background: no-repeat url('/assets/img/hp-2.png');
+//     height: 100vh;
+// }
+  
+
+  
+//   body {
+//     background-color: $black;
+//     // overflow-x: hidden;
+//     // overflow-y: auto ;
+//     // height: 100%; }
+  
+//   .container {
+//     height: 100vh;
+//     width: 900px;
+//     overflow-y: auto;
+//   overflow-x: hidden;
+//   // transform: rotate(-90deg);
+//   transform-origin: right top;
+//   transform:rotate(-90deg) translateY(-100px);
+//   }
+
+//   .title {
+//     height: 80vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center; 
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//   }
+  
+//   h1 {
+//     color: #C54E4E;
+//     font-family: "Majesti-Banner", "serif";
+//     text-transform: uppercase;
+//     font-weight: 200;
+//     font-size: 80px;
+//     position: relative;
+//     text-align: center; 
+
+//     &:before {
+//         content: url("/assets/img/logo-big.png");
+//         position: absolute;
+//         top: -6rem;
+//         right: 5rem;
+//         z-index: -1;
+//     }
+
+// }
+    
+  
+//   h2 {
+//     font-size: 35px;
+//     font-family: $primary-font;
+//     color: #BEC3F7; }
+  
+ 
+  
+//   ul {
+//     color: white;
+//     list-style: none; }
+//     ul li {
+//       display: inline;
+//       margin-right: 2rem;
+//       text-transform: uppercase;
+//       font-weight: 200;
+//       color: #C54E4E;
+//       opacity: 0.7; }
+  
+//   a {
+//     font-family: $secondary-font;
+//     text-decoration: none;
+//     color: #C54E4E;
+//     text-align: center; 
+//     &:after {
+//         content: url("/assets/img/icon/icon_arrow.png");
+//         position: relative;
+//         left: 10px; }
+//     }
+   
+  
+  

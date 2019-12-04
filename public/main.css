@@ -1,11 +1,45 @@
 @font-face {
-  font-family: "Majesti-Banner"; }
+  font-family: "Majesti-Banner";
+  src: url("/assets/font/majesti-banner/Majesti-Banner-Light.otf"); }
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/font/avenir/AvenirLTStd-Light.otf"); }
 
 body {
-  background-color: #171717; }
+  font-family: "Majesti-Banner", "serif"; }
 
-h1 {
-  color: #C54E4E;
-  font-family: "Majesti Banner", "serif";
-  text-transform: uppercase; }
+.slide {
+  width: 100vw;
+  height: 100vh; }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left; }
+
+.one {
+  background-color: #c52323; }
+
+.two {
+  background-color: #4f2bcf; }
+
+.three {
+  background-color: #1daa47; }
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
+::-webkit-scrollbar {
+  display: none; }
 

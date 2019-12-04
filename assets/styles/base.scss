@@ -6,11 +6,26 @@ $black: #171717;
 $white: #F7F7F7;
 
 //FONTS
-$primary-font : 'Majesti Banner', 'serif';
-$secondary-font : 'Avenir','sans-serif';
+@font-face {
+    font-family: "Majesti-Banner";
+    src: url('/assets/font/majesti-banner/Majesti-Banner-Light.otf')
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url('/assets/font/avenir/AvenirLTStd-Light.otf')
+}
+
+$primary-font : 'Majesti-Banner', 'serif';
+$secondary-font : 'Avenir';
 $font-size-base : 16px;
 
 //SPACING
 $margin:15rem;
 $section-space:5rem;
 $gutters:10rem;
+
+
+body {
+    font-family: $primary-font;
+}
