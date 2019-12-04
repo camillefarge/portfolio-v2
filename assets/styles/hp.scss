@@ -7,126 +7,124 @@
   display: flex;
   flex-direction: row;
   width: 400vw; //value is equal to total width of the content
-  transform:rotate(90deg) translateY(-100vh);
+  transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
 
 .one {
-  background-color: rgb(197, 35, 35);
+  // background-color: rgb(197, 35, 35);
 }
 .two {
   background-color: rgb(79, 43, 207);
-  
 }
 .three {
   background-color: rgb(29, 170, 71);
 }
 
-
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
-  transform:rotate(-90deg) translateX(-100vh);
-  
+  transform: rotate(-90deg) translateX(-100vh);
+
   transform-origin: top left;
   overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
-  -ms-overflow-style:none;
+  -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
 
-
-
-
-
-
-// body {
-//     font-family: "Majesti Banner", "serif"; 
-//     background-color: $black;
-//     // background: no-repeat url('/assets/img/hp-2.png');
-//     height: 100vh;
-// }
-  
+body {
+  background-color: $black;
 
   
-//   body {
-//     background-color: $black;
-//     // overflow-x: hidden;
-//     // overflow-y: auto ;
-//     // height: 100%; }
-  
-//   .container {
-//     height: 100vh;
-//     width: 900px;
-//     overflow-y: auto;
-//   overflow-x: hidden;
-//   // transform: rotate(-90deg);
-//   transform-origin: right top;
-//   transform:rotate(-90deg) translateY(-100px);
-//   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
 
-//   .title {
-//     height: 80vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center; 
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//   }
-  
-//   h1 {
-//     color: #C54E4E;
-//     font-family: "Majesti-Banner", "serif";
-//     text-transform: uppercase;
-//     font-weight: 200;
-//     font-size: 80px;
-//     position: relative;
-//     text-align: center; 
+    img {
+      margin-left: 10rem;
+    }
 
-//     &:before {
-//         content: url("/assets/img/logo-big.png");
-//         position: absolute;
-//         top: -6rem;
-//         right: 5rem;
-//         z-index: -1;
-//     }
+    ul {
+      color: white;
+      list-style: none;
+      display: inline;
+      margin-right: 10rem;
+    }
 
-// }
-    
+    ul li {
+      display: inline;
+      margin-right: 5rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      color: $primary-color;
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+
+
+  }
+
+  .one  {
+
+    .title {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
   
-//   h2 {
-//     font-size: 35px;
-//     font-family: $primary-font;
-//     color: #BEC3F7; }
+    h1 {
+      color: $primary-color;
+      font-family: "Majesti-Banner", "serif";
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 80px;
+      position: relative;
+      text-align: center;
+      left: 3rem;
   
- 
+      &:before {
+        content: url("/assets/img/logo-medium.png");
+        position: absolute;
+        top: -6rem;
+        right: 9.5rem;
+        z-index: -1;
+        height: 50%;
+        
+      }
+    }
   
-//   ul {
-//     color: white;
-//     list-style: none; }
-//     ul li {
-//       display: inline;
-//       margin-right: 2rem;
-//       text-transform: uppercase;
-//       font-weight: 200;
-//       color: #C54E4E;
-//       opacity: 0.7; }
+    h2 {
+      font-size: 35px;
+      font-family: $primary-font;
+      color: $secondary-color;
+    }
   
-//   a {
-//     font-family: $secondary-font;
-//     text-decoration: none;
-//     color: #C54E4E;
-//     text-align: center; 
-//     &:after {
-//         content: url("/assets/img/icon/icon_arrow.png");
-//         position: relative;
-//         left: 10px; }
-//     }
-   
+  }
   
-  
+
+  a {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $primary-color;
+    display: block;
+    text-align: center;
+
+    &:after {
+      content: url("/assets/img/icon/icon_arrow.png");
+      position: relative;
+      left: 10px;
+      top: 2px;
+    }
+  }
+}
