@@ -1,3 +1,104 @@
-h1 {
-  color: #C54E4E; }
+@font-face {
+  font-family: "Majesti-Banner";
+  src: url("/assets/font/majesti-banner/Majesti-Banner-Light.otf"); }
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/font/avenir/AvenirLTStd-Light.otf"); }
+
+body {
+  font-family: "Majesti-Banner", "serif"; }
+
+.slide {
+  width: 100vw;
+  height: calc(100vh - 38px); }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left; }
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  background-color: #171717; }
+  body nav {
+    margin-top: 2rem; }
+    body nav img {
+      margin-left: 10rem;
+      position: fixed;
+      left: 0; }
+    body nav ul {
+      color: white;
+      list-style: none;
+      display: inline;
+      margin-right: 10rem;
+      position: fixed;
+      right: 0; }
+    body nav ul li {
+      display: inline;
+      margin-right: 5rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      color: #C54E4E;
+      font-size: 1.2rem;
+      opacity: 0.7; }
+  body .one .title {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  body .one h1 {
+    color: #C54E4E;
+    font-family: "Majesti-Banner", "serif";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 80px;
+    position: relative;
+    text-align: center;
+    left: 3rem; }
+    body .one h1:before {
+      content: url("/assets/img/logo-medium.png");
+      position: absolute;
+      top: -6rem;
+      right: 9.5rem;
+      z-index: -1;
+      height: 50%; }
+  body .one h2 {
+    font-size: 35px;
+    font-family: "Majesti-Banner", "serif";
+    color: #BEC3F7; }
+  body .one a {
+    font-family: "Avenir";
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C54E4E;
+    display: block;
+    text-align: center; }
+    body .one a:after {
+      content: url("/assets/img/icon/icon_arrow.png");
+      position: relative;
+      left: 10px;
+      top: 2px; }
+  body .two .work-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
