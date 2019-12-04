@@ -97,39 +97,44 @@ body {
       position: relative;
       left: 10px;
       top: 2px; }
-  body .work_type-list {
-    margin-top: 8rem;
-    color: #BEC3F7;
-    text-transform: uppercase; }
-    body .work_type-list li {
-      display: inline-block;
-      margin-right: 5rem;
-      font-size: 1.2rem;
-      opacity: 0.5; }
-    body .work_type-list .active {
-      opacity: 1; }
-  body .work .project-wrapper {
+  body .work {
     margin-left: 10rem; }
-    body .work .project-wrapper h1 {
-      color: #C54E4E;
-      font-size: 3rem;
-      line-height: 3.3rem;
-      text-transform: uppercase;
-      position: relative;
-      top: 14rem;
-      right: 8rem;
-      display: block;
-      max-width: 50px; }
-    body .work .project-wrapper img {
-      max-height: 300px; }
-    body .work .project-wrapper ul {
+    body .work_type-list {
+      margin-top: 8rem;
       color: #BEC3F7;
-      text-transform: uppercase;
-      position: relative;
-      left: 5rem;
-      bottom: 0.8rem; }
-      body .work .project-wrapper ul li {
+      text-transform: uppercase; }
+      body .work_type-list li {
         display: inline-block;
+        margin-right: 5rem;
         font-size: 1.2rem;
-        margin-right: 5rem; }
+        opacity: 0.5; }
+      body .work_type-list .active {
+        opacity: 1; }
+    body .work .projects {
+      display: flex; }
+      body .work .projects .project-wrapper {
+        margin-right: 20rem;
+        position: relative; }
+        body .work .projects .project-wrapper h1 {
+          color: #C54E4E;
+          font-size: 3rem;
+          line-height: 3.3rem;
+          text-transform: uppercase;
+          position: absolute;
+          top: 4rem;
+          left: -9rem;
+          display: block;
+          max-width: 450px; }
+        body .work .projects .project-wrapper img {
+          max-height: 300px; }
+        body .work .projects .project-wrapper ul {
+          color: #BEC3F7;
+          text-transform: uppercase;
+          position: relative;
+          left: 5rem;
+          bottom: 0.8rem; }
+          body .work .projects .project-wrapper ul li {
+            display: inline-block;
+            font-size: 1.2rem;
+            margin-right: 5rem; }
 

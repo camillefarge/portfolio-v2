@@ -135,10 +135,14 @@ body {
   
 
   .work {
+    margin-left:10rem;
+
     &_type-list {
       margin-top: 8rem;
       color: $secondary-color;
       text-transform: uppercase;
+
+      // position: fixed;
 
       li {
         display: inline-block;
@@ -153,38 +157,50 @@ body {
       }
     }
 
+.projects {
+  display: flex;
+  // flex-direction: row;
 
-    .project-wrapper {
-      margin-left:10rem;
-      h1 {
-        color: $primary-color;
-        font-size: 3rem;
-        line-height: 3.3rem;
-        text-transform: uppercase;
-        position: relative;
-        top: 14rem;
-        right: 8rem;
 
-        display: block;
-        max-width: 50px;
-      }
-      img {
-        max-height:300px ;
-      }
-      ul {
-        color: $secondary-color;
-        text-transform: uppercase;
-        position: relative;
-        left:5rem;
-        bottom: 0.8rem;
-  
-        li {
-          display: inline-block;
-          font-size: 1.2rem;
-          margin-right: 5rem;
-        }
-      }
+  .project-wrapper {
+    margin-right:20rem;
+    position: relative;
+    h1 {
+      color: $primary-color;
+      font-size: 3rem;
+      line-height: 3.3rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 4rem;
+      left: -9rem;
+
+      display: block;
+      max-width: 450px;
     }
+    img {
+      max-height:300px ;
+    }
+    ul {
+      color: $secondary-color;
+      text-transform: uppercase;
+      position: relative;
+      left:5rem;
+      bottom: 0.8rem;
+
+      li {
+        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 5rem;
+      }
+      
+    }
+  }
+
+  .ctv {
+
+  }
+}
+
     
   }
 
