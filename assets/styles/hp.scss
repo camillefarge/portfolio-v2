@@ -1,6 +1,7 @@
 .slide {
   width: 100vw;
-  height: calc(100vh - 38px);
+  height: calc(100vh - 70px);
+  margin-top: 70px;
 }
 
 .wrapper {
@@ -133,13 +134,58 @@ body {
   }
   
 
-  .two {
-    .work-wrapper {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .work {
+    &_type-list {
+      margin-top: 8rem;
+      color: $secondary-color;
+      text-transform: uppercase;
+
+      li {
+        display: inline-block;
+        margin-right: 5rem;
+        // margin-bottom: 2rem;
+        font-size: 1.2rem;
+        opacity: 0.5;
+      }
+
+      .active {
+        opacity: 1;
+      }
     }
+
+
+    .project-wrapper {
+      margin-left:10rem;
+      h1 {
+        color: $primary-color;
+        font-size: 3rem;
+        line-height: 3.3rem;
+        text-transform: uppercase;
+        position: relative;
+        top: 14rem;
+        right: 8rem;
+
+        display: block;
+        max-width: 50px;
+      }
+      img {
+        max-height:300px ;
+      }
+      ul {
+        color: $secondary-color;
+        text-transform: uppercase;
+        position: relative;
+        left:5rem;
+        bottom: 0.8rem;
+  
+        li {
+          display: inline-block;
+          font-size: 1.2rem;
+          margin-right: 5rem;
+        }
+      }
+    }
+    
   }
 
   
