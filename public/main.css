@@ -159,3 +159,12 @@ body {
       body .work-nav_type-list .active {
         opacity: 1; }
 
+.rook main {
+  background-color: #F7F7F7;
+  font-family: "Avenir"; }
+  .rook main strong {
+    font-weight: 700; }
+
+.rook_interface {
+  background-color: #171717; }
+

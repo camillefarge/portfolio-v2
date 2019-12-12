@@ -1,0 +1,16 @@
+.rook {
+    
+    main {
+        background-color: $white;
+        font-family: $secondary-font;
+        strong {
+            font-weight: 700;
+        }
+
+        
+    }
+
+    &_interface {
+        background-color: $black;
+    }
+}
