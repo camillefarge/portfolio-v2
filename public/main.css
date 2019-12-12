@@ -159,12 +159,45 @@ body {
       body .work-nav_type-list .active {
         opacity: 1; }
 
-.rook main {
+.project main {
   background-color: #F7F7F7;
   font-family: "Avenir"; }
-  .rook main strong {
+  .project main strong {
     font-weight: 700; }
 
-.rook_interface {
+.project_hero {
+  height: 80vh; }
+  .project_hero header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .project_hero .wrapper-title {
+    position: relative; }
+  .project_hero_title {
+    color: #C54E4E;
+    text-transform: uppercase;
+    font-size: 5rem;
+    position: absolute;
+    top: 40px;
+    right: 200px; }
+  .project_hero_thumbnail {
+    height: 350px;
+    width: 350px; }
+  .project_hero_type {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: "Majesti-Banner", "serif";
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #BEC3F7; }
+    .project_hero_type li {
+      display: inline;
+      margin: 0 15px;
+      opacity: 0.8; }
+
+.project_interface {
   background-color: #171717; }
 

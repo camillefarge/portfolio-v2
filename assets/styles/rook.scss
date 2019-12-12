@@ -1,4 +1,4 @@
-.rook {
+.project {
     
     main {
         background-color: $white;
@@ -9,6 +9,56 @@
 
         
     }
+
+    &_hero {
+        height: 80vh;
+        
+        header {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper-title {
+            position: relative;
+        }
+
+        &_title {
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 5rem;
+            // font-weight: 500;
+
+            position: absolute;
+            top: 40px;
+            right: 200px;
+        }
+
+        &_thumbnail {
+            // display: block;
+            height: 350px;
+            width: 350px;
+        }
+
+        &_type {
+            text-align: center;
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-family: $primary-font;
+            font-size: 1.2rem;
+            font-weight: 200;
+            color: $secondary-color;
+
+            li {
+                display: inline;
+                margin: 0 15px;
+                opacity: 0.8;
+            }
+        }
+    }
+
 
     &_interface {
         background-color: $black;
