@@ -211,7 +211,8 @@ body {
   color: #171717;
   font-family: "Majesti-Banner-Medium", "serif";
   font-size: 4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 5rem 0; }
 
 .project h4 {
   font-family: "Majesti-Banner-Medium", "serif";
@@ -230,7 +231,12 @@ body {
     margin-top: 1.5rem;
     line-height: 1.5rem; }
   .project_text-wrapper ul {
-    margin-top: 0.5rem; }
+    padding-top: 0.5rem;
+    list-style: inside; }
+  .project_text-wrapper ol {
+    padding-top: 0.5rem;
+    list-style: inside;
+    list-style-type: decimal; }
   .project_text-wrapper li {
     margin: 1rem 0; }
 
@@ -287,8 +293,6 @@ body {
       left: 100px; }
     .project_branding .branding-wrapper img {
       width: 100%; }
-  .project_branding h3 {
-    margin: 5rem 0; }
   .project_branding_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -309,4 +313,22 @@ body {
   .project_interface h2 {
     position: absolute;
     top: -85px; }
+  .project_interface h3,
+  .project_interface h4,
+  .project_interface p,
+  .project_interface ul,
+  .project_interface ol {
+    color: #F7F7F7; }
+  .project_interface_hierarchy {
+    max-width: 900px;
+    display: block;
+    margin: 8rem auto 13rem; }
+  .project_interface_grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px; }
+  .project_interface img {
+    display: block;
+    margin: 8rem auto;
+    max-width: 1000px; }
 
