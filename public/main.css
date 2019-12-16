@@ -378,3 +378,38 @@ body {
     text-decoration: none;
     color: rgba(247, 247, 247, 0.4); }
 
+.contact {
+  font-family: "Majesti-Banner-Light", "serif";
+  color: #BEC3F7;
+  padding: 15rem 10rem; }
+  .contact p {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    z-index: 1;
+    position: relative; }
+  .contact h1 {
+    color: #C54E4E;
+    font-size: 8rem;
+    margin-bottom: 70px;
+    z-index: 1;
+    position: relative; }
+  .contact h2 {
+    font-size: 2.5rem;
+    max-width: 40%;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 70px; }
+  .contact img {
+    z-index: 0;
+    position: absolute;
+    right: 300px;
+    top: 250px;
+    height: 400px;
+    filter: grayscale(20%); }
+  .contact ul li {
+    font-family: "Avenir";
+    display: inline;
+    margin-right: 15px;
+    color: #C54E4E;
+    opacity: 0.8; }
+
