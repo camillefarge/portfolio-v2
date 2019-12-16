@@ -88,9 +88,11 @@ nav {
     margin-right: 5rem;
     text-transform: uppercase;
     font-weight: 200;
-    color: #C54E4E;
     font-size: 1.2rem;
     opacity: 0.7; }
+    nav ul li a {
+      color: #C54E4E;
+      text-decoration: none; }
 
 html {
   background-color: #171717; }
@@ -132,18 +134,23 @@ html {
   font-family: "Majesti-Banner-Light", "serif";
   color: #BEC3F7; }
 
-.one a {
+.one .work_link {
   font-family: "Avenir";
   font-size: 1.2rem;
   text-decoration: none;
   color: #C54E4E;
   display: block;
   text-align: center; }
-  .one a:after {
+  .one .work_link:after {
     content: url("/assets/img/icon/icon_arrow.png");
     position: relative;
     left: 10px;
     top: 2px; }
+
+.one .github_link .github_img {
+  position: absolute;
+  left: 95vw;
+  bottom: 70px; }
 
 .work {
   margin-left: 10rem; }
