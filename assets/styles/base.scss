@@ -7,8 +7,23 @@ $white: #F7F7F7;
 
 //FONTS
 @font-face {
-    font-family: "Majesti-Banner";
+    font-family: "Majesti-Banner-Light";
     src: url('/assets/font/majesti-banner/Majesti-Banner-Light.otf')
+}
+
+@font-face {
+    font-family: "Majesti-Banner";
+    src: url('/assets/font/majesti-banner/Majesti-Banner-Book.otf')
+}
+
+@font-face {
+    font-family: "Majesti-Banner-Italic";
+    src: url('/assets/font/majesti-banner/Majesti-Banner-BookItalic.otf')
+}
+
+@font-face {
+    font-family: "Majesti-Banner-Medium";
+    src: url('/assets/font/majesti-banner/Majesti-Banner-Medium.otf')
 }
 
 @font-face {
@@ -16,8 +31,24 @@ $white: #F7F7F7;
     src: url('/assets/font/avenir/AvenirLTStd-Light.otf')
 }
 
+@font-face {
+    font-family: "Avenir-Bold";
+    src: url('/assets/font/avenir/AvenirLTStd-Heavy.otf')
+}
+
+@font-face {
+    font-family: "Avenir-Italic";
+    src: url('/assets/font/avenir/AvenirLTStd-BookOblique.otf')
+}
+
+$primary-font-light : 'Majesti-Banner-Light', 'serif';
 $primary-font : 'Majesti-Banner', 'serif';
+$primary-font-medium : 'Majesti-Banner-Medium', 'serif';
+$primary-font-italic : 'Majesti-Banner-Italic', 'serif';
+
 $secondary-font : 'Avenir';
+$secondary-font-bold: 'Avenir-Bold';
+$secondary-font-italic: 'Avenir-Italic';
 $font-size-base : 16px;
 
 //SPACING
@@ -28,4 +59,21 @@ $gutters:10rem;
 
 body {
     font-family: $primary-font;
+}
+
+.d-inblock {
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+strong {
+    // font-weight: 800;
+    font-family: $secondary-font-bold;
+
+}
+
+.strong-p {
+    padding-top: 1rem;
+    font-family: $secondary-font-bold;
+    font-size: 1.3rem;
 }

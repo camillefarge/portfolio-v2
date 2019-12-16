@@ -1,13 +1,45 @@
 @font-face {
-  font-family: "Majesti-Banner";
+  font-family: "Majesti-Banner-Light";
   src: url("/assets/font/majesti-banner/Majesti-Banner-Light.otf"); }
+
+@font-face {
+  font-family: "Majesti-Banner";
+  src: url("/assets/font/majesti-banner/Majesti-Banner-Book.otf"); }
+
+@font-face {
+  font-family: "Majesti-Banner-Italic";
+  src: url("/assets/font/majesti-banner/Majesti-Banner-BookItalic.otf"); }
+
+@font-face {
+  font-family: "Majesti-Banner-Medium";
+  src: url("/assets/font/majesti-banner/Majesti-Banner-Medium.otf"); }
 
 @font-face {
   font-family: "Avenir";
   src: url("/assets/font/avenir/AvenirLTStd-Light.otf"); }
 
+@font-face {
+  font-family: "Avenir-Bold";
+  src: url("/assets/font/avenir/AvenirLTStd-Heavy.otf"); }
+
+@font-face {
+  font-family: "Avenir-Italic";
+  src: url("/assets/font/avenir/AvenirLTStd-BookOblique.otf"); }
+
 body {
   font-family: "Majesti-Banner", "serif"; }
+
+.d-inblock {
+  display: inline-block;
+  margin-right: 5rem; }
+
+strong {
+  font-family: "Avenir-Bold"; }
+
+.strong-p {
+  padding-top: 1rem;
+  font-family: "Avenir-Bold";
+  font-size: 1.3rem; }
 
 .slide {
   width: 100vw;
@@ -30,132 +62,312 @@ body {
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
-  -ms-overflow-style: none; }
+  -ms-overflow-style: none;
+  background-color: #171717;
+  z-index: -1; }
 
 ::-webkit-scrollbar {
   display: none; }
 
-body {
+nav {
+  z-index: 10;
+  margin-top: 2rem; }
+  nav img {
+    margin-left: 10rem;
+    position: fixed;
+    left: 0; }
+  nav ul {
+    color: white;
+    list-style: none;
+    display: inline;
+    margin-right: 10rem;
+    position: fixed;
+    right: 0; }
+  nav ul li {
+    display: inline;
+    margin-right: 5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #C54E4E;
+    font-size: 1.2rem;
+    opacity: 0.7; }
+
+html {
   background-color: #171717; }
-  body nav {
-    margin-top: 2rem; }
-    body nav img {
-      margin-left: 10rem;
-      position: fixed;
-      left: 0; }
-    body nav ul {
-      color: white;
-      list-style: none;
-      display: inline;
-      margin-right: 10rem;
-      position: fixed;
-      right: 0; }
-    body nav ul li {
-      display: inline;
-      margin-right: 5rem;
-      text-transform: uppercase;
-      font-weight: 200;
-      color: #C54E4E;
-      font-size: 1.2rem;
-      opacity: 0.7; }
-  body .one .title {
-    height: 80vh;
+
+.one .title-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .one .title-wrapper .title {
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column; }
-  body .one h1 {
-    color: #C54E4E;
-    font-family: "Majesti-Banner", "serif";
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 80px;
-    position: relative;
-    text-align: center;
-    left: 3rem; }
-    body .one h1:before {
-      content: url("/assets/img/logo-medium.png");
-      position: absolute;
-      top: -6rem;
-      right: 9.5rem;
-      z-index: -1;
-      height: 50%; }
-  body .one h2 {
-    font-size: 35px;
-    font-family: "Majesti-Banner", "serif";
-    color: #BEC3F7; }
-  body .one a {
-    font-family: "Avenir";
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #C54E4E;
-    display: block;
-    text-align: center; }
-    body .one a:after {
-      content: url("/assets/img/icon/icon_arrow.png");
+    flex-direction: column;
+    position: relative; }
+    .one .title-wrapper .title h1 {
       position: relative;
-      left: 10px;
-      top: 2px; }
-  body .work {
-    margin-left: 10rem; }
-    body .work_type-list {
-      margin-top: 8rem;
-      color: #BEC3F7;
-      text-transform: uppercase;
-      margin-bottom: 4rem; }
-      body .work_type-list li {
-        display: inline-block;
-        margin-right: 5rem;
-        font-size: 1.2rem;
-        opacity: 0.5; }
-      body .work_type-list .active {
-        opacity: 1; }
-    body .work .projects {
-      display: flex;
-      margin-top: 250px;
-      position: relative; }
-      body .work .projects .project-wrapper {
-        margin-right: 20rem;
-        position: relative; }
-        body .work .projects .project-wrapper h1 {
-          color: #C54E4E;
-          font-size: 3rem;
-          line-height: 3.3rem;
-          text-transform: uppercase;
-          position: absolute;
-          top: 4rem;
-          left: -7rem;
-          display: block;
-          max-width: 450px; }
-        body .work .projects .project-wrapper img {
-          max-height: 300px; }
-        body .work .projects .project-wrapper ul {
-          color: #BEC3F7;
-          text-transform: uppercase;
-          position: relative;
-          left: 5rem;
-          bottom: 0.8rem; }
-          body .work .projects .project-wrapper ul li {
-            display: inline-block;
-            font-size: 1.2rem;
-            margin-right: 5rem; }
-  body .work-nav {
-    margin-left: 10rem;
+      text-align: center;
+      left: 3rem; }
+    .one .title-wrapper .title .hero_img {
+      position: absolute; }
+
+.one h1 {
+  color: #C54E4E;
+  font-family: "Majesti-Banner", "serif";
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 80px; }
+  .one h1:before {
     position: absolute;
-    top: 100px;
-    z-index: 1; }
-    body .work-nav_type-list {
-      margin-top: 8rem;
-      color: #BEC3F7;
-      text-transform: uppercase;
-      margin-bottom: 4rem;
-      display: block; }
-      body .work-nav_type-list li {
-        display: inline-block;
-        margin-right: 5rem;
-        font-size: 1.2rem;
-        opacity: 0.5; }
-      body .work-nav_type-list .active {
-        opacity: 1; }
+    top: -6rem;
+    right: 9.5rem;
+    z-index: -1;
+    height: 50%; }
+
+.one h2 {
+  font-size: 35px;
+  font-family: "Majesti-Banner-Light", "serif";
+  color: #BEC3F7; }
+
+.one a {
+  font-family: "Avenir";
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #C54E4E;
+  display: block;
+  text-align: center; }
+  .one a:after {
+    content: url("/assets/img/icon/icon_arrow.png");
+    position: relative;
+    left: 10px;
+    top: 2px; }
+
+.work {
+  margin-left: 10rem; }
+  .work_type-list {
+    margin-top: 8rem;
+    color: #BEC3F7;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    position: sticky; }
+    .work_type-list li {
+      display: inline-block;
+      margin-right: 5rem;
+      font-size: 1.2rem;
+      opacity: 0.5; }
+    .work_type-list .active {
+      opacity: 1; }
+  .work .projects {
+    display: flex;
+    position: relative; }
+    .work .projects .project-wrapper {
+      margin-right: 20rem;
+      position: relative; }
+      .work .projects .project-wrapper h1 {
+        color: #C54E4E;
+        font-family: "Majesti-Banner-Light", "serif";
+        font-size: 3rem;
+        line-height: 3.3rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 4rem;
+        left: -7rem;
+        display: block;
+        max-width: 450px; }
+      .work .projects .project-wrapper img {
+        max-height: 300px; }
+      .work .projects .project-wrapper ul {
+        color: #BEC3F7;
+        text-transform: uppercase;
+        position: relative;
+        left: 5rem;
+        bottom: 0.8rem; }
+        .work .projects .project-wrapper ul li {
+          display: inline-block;
+          font-size: 1.2rem;
+          margin-right: 5rem; }
+
+.work-nav {
+  margin-left: 10rem;
+  position: absolute;
+  top: 100px;
+  z-index: 1; }
+  .work-nav_type-list {
+    margin-top: 8rem;
+    color: #BEC3F7;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    display: block; }
+    .work-nav_type-list li {
+      display: inline-block;
+      margin-right: 5rem;
+      font-size: 1.2rem;
+      opacity: 0.5; }
+    .work-nav_type-list .active {
+      opacity: 1; }
+
+body {
+  background-color: #171717; }
+
+.project h2 {
+  color: #C54E4E;
+  font-family: "Majesti-Banner", "serif";
+  font-size: 8rem;
+  text-transform: uppercase; }
+
+.project h3 {
+  color: #171717;
+  font-family: "Majesti-Banner-Medium", "serif";
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 5rem 0; }
+
+.project h4 {
+  font-family: "Majesti-Banner-Medium", "serif";
+  font-size: 1.9rem; }
+
+.project main {
+  font-family: "Avenir"; }
+  .project main strong {
+    font-weight: 700; }
+
+.project_text-wrapper {
+  max-width: 400px;
+  margin-bottom: 80px; }
+  .project_text-wrapper p {
+    margin-top: 1.5rem;
+    line-height: 1.5rem; }
+  .project_text-wrapper ul {
+    padding-top: 0.5rem;
+    list-style: inside; }
+  .project_text-wrapper ol {
+    padding-top: 0.5rem;
+    list-style: inside;
+    list-style-type: decimal; }
+  .project_text-wrapper li {
+    margin: 1rem 0; }
+
+.project_hero {
+  height: 85vh;
+  background-color: #171717; }
+  .project_hero header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .project_hero .wrapper-title {
+    position: relative; }
+  .project_hero_title {
+    color: #C54E4E;
+    text-transform: uppercase;
+    font-size: 5rem;
+    position: absolute;
+    top: 40px;
+    right: 200px; }
+  .project_hero_thumbnail {
+    height: 350px;
+    width: 350px; }
+  .project_hero_type {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: "Majesti-Banner", "serif";
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #BEC3F7; }
+    .project_hero_type li {
+      display: inline;
+      margin: 0 15px;
+      opacity: 0.8; }
+
+.project_intro {
+  background-color: #F7F7F7;
+  padding: 80px 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; }
+
+.project_branding {
+  background-color: #F7F7F7;
+  padding-top: 3rem;
+  padding-bottom: 25rem; }
+  .project_branding .branding-left {
+    padding: 0 15rem; }
+  .project_branding .branding-wrapper {
+    position: relative; }
+    .project_branding .branding-wrapper h2 {
+      position: absolute;
+      top: -85px;
+      left: 100px; }
+    .project_branding .branding-wrapper img {
+      width: 100%; }
+  .project_branding_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 200px; }
+    .project_branding_grid figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .project_branding_grid figure img {
+        padding-bottom: 3rem; }
+      .project_branding_grid figure figcaption {
+        font-family: "Avenir-Italic"; }
+  .project_branding .visu-img {
+    max-width: 100vw; }
+  .project_branding .visu-img-1 {
+    position: relative;
+    top: 5px; }
+  .project_branding .visu-img-3 {
+    position: relative;
+    bottom: 5px; }
+
+.project_interface {
+  background-color: #171717;
+  padding: 0 15rem;
+  position: relative; }
+  .project_interface h2 {
+    position: absolute;
+    top: -85px; }
+  .project_interface video {
+    margin-top: 200px;
+    max-height: 600px; }
+  .project_interface h3,
+  .project_interface h4,
+  .project_interface p,
+  .project_interface ul,
+  .project_interface ol {
+    color: #F7F7F7; }
+  .project_interface_hierarchy {
+    max-width: 900px;
+    display: block;
+    margin: 8rem auto 13rem; }
+  .project_interface_grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 200px; }
+  .project_interface img {
+    display: block;
+    margin: 8rem auto;
+    max-width: 1000px; }
+
+.project_ending {
+  display: flex;
+  justify-content: center;
+  background-color: #171717; }
+  .project_ending_contact {
+    font-family: "Majesti-Banner-Medium", "serif";
+    font-size: 4rem;
+    color: #C54E4E;
+    text-decoration: none;
+    margin: 0 50px 20px; }
+  .project_ending_link {
+    position: relative;
+    top: 40px;
+    text-decoration: none;
+    color: rgba(247, 247, 247, 0.4); }
 
