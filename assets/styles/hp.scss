@@ -25,231 +25,225 @@
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
+  // margin-top: 70px;
   transform: rotate(-90deg) translateX(-100vh);
-
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: $black;
+  z-index: -1;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
+nav {
+  z-index: 10;
 
-.hp {
-  .outer-wrapper {
-    background-color: $black;
+  margin-top: 2rem;
 
+
+  img {
+    margin-left: 10rem;
+    position: fixed;
+    left: 0;
   }
 
+  ul {
+    color: white;
+    list-style: none;
+    display: inline;
+    margin-right: 10rem;
+    position: fixed;
+    right: 0;
+  }
+
+  ul li {
+    display: inline;
+    margin-right: 5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: $primary-color;
+    font-size: 1.2rem;
+    opacity: 0.7;
+  }
 }
 
-body {
+html {
+  background-color: $black;
+}
 
-  nav {
-    // display: flex;
-    // justify-content: space-between;
-    padding-top: 2rem;
-    // position: relative;
-    // position: fixed;
-
-    img {
-      margin-left: 10rem;
-      position: fixed;
-      left: 0;
-    }
-
-    ul {
-      color: white;
-      list-style: none;
-      display: inline;
-      margin-right: 10rem;
-      position: fixed;
-      right: 0;
-    }
-
-    ul li {
-      display: inline;
-      margin-right: 5rem;
-      text-transform: uppercase;
-      font-weight: 200;
-      color: $primary-color;
-      font-size: 1.2rem;
-      opacity: 0.7;
-    }
-
-
-  }
+.one {
   
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-  .one  {
-  
     .title {
-      height: 80vh;
+      height: 70vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
-    }
-  
-    h1 {
-      color: $primary-color;
-      font-family: "Majesti-Banner", "serif";
-      text-transform: uppercase;
-      font-weight: 200;
-      font-size: 80px;
       position: relative;
-      text-align: center;
-      left: 3rem;
-  
-      &:before {
-        content: url("/assets/img/logo-medium.png");
-        position: absolute;
-        top: -6rem;
-        right: 9.5rem;
-        z-index: -1;
-        height: 50%;
-        
-      }
-    }
-  
-    h2 {
-      font-size: 35px;
-      font-family: $primary-font-light;
-      color: $secondary-color;
-    }
-  
-    a {
-      font-family: $secondary-font;
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: $primary-color;
-      display: block;
-      text-align: center;
-  
-      &:after {
-        content: url("/assets/img/icon/icon_arrow.png");
+
+      h1 {
         position: relative;
-        left: 10px;
-        top: 2px;
+        text-align: center;
+        left: 3rem;
+      }
+
+      .hero_img {
+        position: absolute;
       }
     }
   }
-  
 
-  .work {
-    margin-left:10rem;
+  h1 {
+    color: $primary-color;
+    font-family: "Majesti-Banner", "serif";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 80px;
 
-    &_type-list {
-      margin-top: 8rem;
-      color: $secondary-color;
-      text-transform: uppercase;
-
-      margin-bottom: 4rem;
-
-      // position: sticky;
-
-      li {
-        display: inline-block;
-        margin-right: 5rem;
-        // margin-bottom: 2rem;
-        font-size: 1.2rem;
-        opacity: 0.5;
-      }
-
-      .active {
-        opacity: 1;
-      }
-    }
-
-.projects {
-  display: flex;
-  // margin-top: 250px;
-  position: relative;
-  // flex-direction: row;
-
-
-  .project-wrapper {
-    margin-right:20rem;
-    position: relative;
-    h1 {
-      color: $primary-color;
-      font-family: $primary-font-light;
-      font-size: 3rem;
-      line-height: 3.3rem;
-      text-transform: uppercase;
+    &:before {
+      // content: url("../assets/img/logo-medium.png");
       position: absolute;
-      top: 4rem;
-      left: -7rem;
+      top: -6rem;
+      right: 9.5rem;
+      z-index: -1;
+      height: 50%;
+    }
+  }
 
-      display: block;
-      max-width: 450px;
-    }
-    img {
-      max-height:300px ;
-    }
-    ul {
-      color: $secondary-color;
-      text-transform: uppercase;
+  h2 {
+    font-size: 35px;
+    font-family: $primary-font-light;
+    color: $secondary-color;
+  }
+
+  a {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $primary-color;
+    display: block;
+    text-align: center;
+
+    &:after {
+      content: url("/assets/img/icon/icon_arrow.png");
       position: relative;
-      left:5rem;
-      bottom: 0.8rem;
-
-      li {
-        display: inline-block;
-        font-size: 1.2rem;
-        margin-right: 5rem;
-      }
-      
+      left: 10px;
+      top: 2px;
     }
-  }
-
-  .ctv {
-
   }
 }
 
-    
+.work {
+  margin-left: 10rem;
+
+  &_type-list {
+    margin-top: 8rem;
+    color: $secondary-color;
+    text-transform: uppercase;
+
+    margin-bottom: 4rem;
+
+    position: sticky;
+
+    li {
+      display: inline-block;
+      margin-right: 5rem;
+      // margin-bottom: 2rem;
+      font-size: 1.2rem;
+      opacity: 0.5;
+    }
+
+    .active {
+      opacity: 1;
+    }
   }
 
+  .projects {
+    display: flex;
+    // margin-top: 250px;
+    position: relative;
+    // flex-direction: row;
 
-  .work-nav {
-    margin-left:10rem;
-    position: absolute;
-    top: 100px;
+    .project-wrapper {
+      margin-right: 20rem;
+      position: relative;
+      h1 {
+        color: $primary-color;
+        font-family: $primary-font-light;
+        font-size: 3rem;
+        line-height: 3.3rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 4rem;
+        left: -7rem;
+
+        display: block;
+        max-width: 450px;
+      }
+      img {
+        max-height: 300px;
+      }
+      ul {
+        color: $secondary-color;
+        text-transform: uppercase;
+        position: relative;
+        left: 5rem;
+        bottom: 0.8rem;
+
+        li {
+          display: inline-block;
+          font-size: 1.2rem;
+          margin-right: 5rem;
+        }
+      }
+    }
+
+    .ctv {
+    }
+  }
+}
+
+.work-nav {
+  margin-left: 10rem;
+  position: absolute;
+  top: 100px;
+  // position: sticky;
+  // left: 1200px;
+  z-index: 1;
+
+  &_type-list {
+    margin-top: 8rem;
+    color: $secondary-color;
+    text-transform: uppercase;
+
+    margin-bottom: 4rem;
+
     // position: sticky;
-    // left: 1200px;
-    z-index: 1;
+    display: block;
 
-    &_type-list { 
-      margin-top: 8rem;
-      color: $secondary-color;
-      text-transform: uppercase;
-
-      margin-bottom: 4rem;
-
-      // position: sticky;
-      display: block;
-
-      li {
-        display: inline-block;
-        margin-right: 5rem;
-        // margin-bottom: 2rem;
-        font-size: 1.2rem;
-        opacity: 0.5;
-      }
-
-      .active {
-        opacity: 1;
-      }
+    li {
+      display: inline-block;
+      margin-right: 5rem;
+      // margin-bottom: 2rem;
+      font-size: 1.2rem;
+      opacity: 0.5;
     }
 
-  
-}
+    .active {
+      opacity: 1;
+    }
+  }
 }
 
 // @media (max-width: 888px) {
