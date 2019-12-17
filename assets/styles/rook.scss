@@ -54,7 +54,16 @@ body {
     li {
       margin: 1rem 0;
     }
+    
+  
+
+  a {
+    color: $primary-color;
+    font-weight: 700;
+    font-family: $secondary-font-bold;
+    text-decoration: none;
   }
+}
 
   &_hero {
     height: 85vh;
@@ -80,7 +89,7 @@ body {
 
       position: absolute;
       top: 40px;
-      right: 200px;
+      right: 150px;
     }
 
     &_thumbnail {
@@ -196,6 +205,9 @@ body {
     ol {
       color: $white;
     }
+
+    
+
 
     &_hierarchy {
       max-width: 900px;

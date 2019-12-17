@@ -53,6 +53,11 @@ strong {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left; }
 
+.two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
@@ -100,9 +105,9 @@ nav {
 html {
   background-color: #171717; }
 
-.one .title-wrapper {
+.one {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column; }
   .one .title-wrapper .title {
     height: 70vh;
@@ -115,45 +120,43 @@ html {
     .one .title-wrapper .title h1 {
       position: relative;
       text-align: center;
-      left: 3rem; }
+      right: 2rem; }
     .one .title-wrapper .title .hero_img {
       position: absolute; }
-
-.one h1 {
-  color: #C54E4E;
-  font-family: "Majesti-Banner", "serif";
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 80px; }
-  .one h1:before {
-    position: absolute;
-    top: -6rem;
-    right: 9.5rem;
-    z-index: -1;
-    height: 50%; }
-
-.one h2 {
-  font-size: 35px;
-  font-family: "Majesti-Banner-Light", "serif";
-  color: #BEC3F7; }
-
-.one .work_link {
-  font-family: "Avenir";
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #C54E4E;
-  display: block;
-  text-align: center; }
-  .one .work_link:after {
-    content: url("/assets/img/icon/icon_arrow.png");
+  .one h1 {
+    color: #C54E4E;
+    font-family: "Majesti-Banner-Medium", "serif";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 60px; }
+    .one h1:before {
+      position: absolute;
+      top: -6rem;
+      right: 9.5rem;
+      z-index: -1;
+      height: 50%; }
+  .one h2 {
+    font-size: 25px;
+    font-family: "Majesti-Banner-Light", "serif";
+    color: #BEC3F7;
     position: relative;
-    left: 10px;
-    top: 2px; }
-
-.one .github_link {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px; }
+    right: 75px; }
+  .one .work_link {
+    font-family: "Avenir";
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C54E4E;
+    display: block;
+    text-align: center; }
+    .one .work_link:after {
+      content: url("/assets/img/icon/icon_arrow.png");
+      position: relative;
+      left: 10px;
+      top: 2px; }
+  .one .github_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px; }
 
 .work {
   margin-left: 10rem; }
@@ -259,6 +262,11 @@ body {
     list-style-type: decimal; }
   .project_text-wrapper li {
     margin: 1rem 0; }
+  .project_text-wrapper a {
+    color: #C54E4E;
+    font-weight: 700;
+    font-family: "Avenir-Bold";
+    text-decoration: none; }
 
 .project_hero {
   height: 85vh;
@@ -277,7 +285,7 @@ body {
     font-size: 5rem;
     position: absolute;
     top: 40px;
-    right: 200px; }
+    right: 150px; }
   .project_hero_thumbnail {
     height: 350px;
     width: 350px; }
@@ -406,16 +414,16 @@ body {
     position: relative; }
   .contact main h2 {
     font-size: 2.1rem;
-    max-width: 40%;
+    max-width: 50%;
     z-index: 1;
     position: relative;
-    margin-bottom: 70px; }
+    margin-bottom: 30px; }
   .contact main img {
     z-index: 0;
     position: absolute;
-    top: 50px;
-    right: 0;
-    height: 300px;
+    top: 170px;
+    right: 150px;
+    height: 400px;
     filter: grayscale(20%); }
   .contact main ul li {
     font-family: "Avenir";
@@ -423,5 +431,5 @@ body {
     margin-right: 15px;
     color: #C54E4E;
     opacity: 0.8;
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
 
