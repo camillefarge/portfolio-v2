@@ -42,13 +42,14 @@
 
 nav {
   z-index: 10;
-
   margin-top: 2rem;
-
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   img {
     margin-left: 10rem;
-    position: fixed;
+    position: absolute;
     left: 0;
   }
 
@@ -57,7 +58,7 @@ nav {
     list-style: none;
     display: inline;
     margin-right: 10rem;
-    position: fixed;
+    position: absolute;
     right: 0;
   }
 
@@ -66,7 +67,6 @@ nav {
     margin-right: 5rem;
     text-transform: uppercase;
     font-weight: 200;
-    
     font-size: 1.2rem;
     opacity: 0.7;
 
@@ -149,10 +149,14 @@ html {
   }
 
   .github_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
     .github_img {
-      position: absolute;
-      left: 95vw;
-      bottom: 70px;
+      // position: absolute;
+      // left: 95vw;
+      // bottom: 70px;
     }
   }
   
@@ -167,7 +171,6 @@ html {
     text-transform: uppercase;
 
     margin-bottom: 4rem;
-
     position: sticky;
 
     li {
@@ -200,25 +203,30 @@ html {
         text-transform: uppercase;
         position: absolute;
         top: 4rem;
-        left: -7rem;
+        left: -6rem;
 
         display: block;
-        max-width: 450px;
+        max-width: 320px;
       }
+
       img {
         max-height: 300px;
       }
+
       ul {
         color: $secondary-color;
         text-transform: uppercase;
         position: relative;
-        left: 5rem;
+        // left: 5rem;
         bottom: 0.8rem;
+
+        display: flex;
+        justify-content: space-evenly;
 
         li {
           display: inline-block;
           font-size: 1.2rem;
-          margin-right: 5rem;
+          // margin-right: 5rem;
         }
       }
     }

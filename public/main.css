@@ -71,17 +71,20 @@ strong {
 
 nav {
   z-index: 10;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   nav img {
     margin-left: 10rem;
-    position: fixed;
+    position: absolute;
     left: 0; }
   nav ul {
     color: white;
     list-style: none;
     display: inline;
     margin-right: 10rem;
-    position: fixed;
+    position: absolute;
     right: 0; }
   nav ul li {
     display: inline;
@@ -147,10 +150,10 @@ html {
     left: 10px;
     top: 2px; }
 
-.one .github_link .github_img {
-  position: absolute;
-  left: 95vw;
-  bottom: 70px; }
+.one .github_link {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px; }
 
 .work {
   margin-left: 10rem; }
@@ -181,21 +184,21 @@ html {
         text-transform: uppercase;
         position: absolute;
         top: 4rem;
-        left: -7rem;
+        left: -6rem;
         display: block;
-        max-width: 450px; }
+        max-width: 320px; }
       .work .projects .project-wrapper img {
         max-height: 300px; }
       .work .projects .project-wrapper ul {
         color: #BEC3F7;
         text-transform: uppercase;
         position: relative;
-        left: 5rem;
-        bottom: 0.8rem; }
+        bottom: 0.8rem;
+        display: flex;
+        justify-content: space-evenly; }
         .work .projects .project-wrapper ul li {
           display: inline-block;
-          font-size: 1.2rem;
-          margin-right: 5rem; }
+          font-size: 1.2rem; }
 
 .work-nav {
   margin-left: 10rem;
@@ -378,38 +381,47 @@ body {
     text-decoration: none;
     color: rgba(247, 247, 247, 0.4); }
 
-.contact {
+.body {
+  height: 100vh; }
+
+.contact main {
   font-family: "Majesti-Banner-Light", "serif";
   color: #BEC3F7;
-  padding: 15rem 10rem; }
-  .contact p {
-    font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative; }
+  .contact main p {
+    font-size: 3rem;
     margin-bottom: 30px;
     z-index: 1;
     position: relative; }
-  .contact h1 {
+  .contact main h1 {
     color: #C54E4E;
-    font-size: 8rem;
+    font-size: 7rem;
     margin-bottom: 70px;
     z-index: 1;
     position: relative; }
-  .contact h2 {
-    font-size: 2.5rem;
+  .contact main h2 {
+    font-size: 2.1rem;
     max-width: 40%;
     z-index: 1;
     position: relative;
     margin-bottom: 70px; }
-  .contact img {
+  .contact main img {
     z-index: 0;
     position: absolute;
-    right: 300px;
-    top: 250px;
-    height: 400px;
+    top: 50px;
+    right: 0;
+    height: 300px;
     filter: grayscale(20%); }
-  .contact ul li {
+  .contact main ul li {
     font-family: "Avenir";
     display: inline;
     margin-right: 15px;
     color: #C54E4E;
-    opacity: 0.8; }
+    opacity: 0.8;
+    font-size: 1.5rem; }
 
