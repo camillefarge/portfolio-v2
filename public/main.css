@@ -53,6 +53,11 @@ strong {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left; }
 
+.two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
@@ -70,34 +75,39 @@ strong {
   display: none; }
 
 nav {
+  background-color: #171717;
   z-index: 10;
-  margin-top: 2rem; }
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
   nav img {
-    margin-left: 10rem;
-    position: fixed;
-    left: 0; }
+    margin-left: 10rem; }
   nav ul {
     color: white;
     list-style: none;
     display: inline;
     margin-right: 10rem;
-    position: fixed;
+    margin-top: 0.6rem;
+    position: absolute;
     right: 0; }
   nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 5rem;
     text-transform: uppercase;
     font-weight: 200;
-    color: #C54E4E;
     font-size: 1.2rem;
     opacity: 0.7; }
+    nav ul li a {
+      color: #C54E4E;
+      text-decoration: none; }
 
 html {
   background-color: #171717; }
 
-.one .title-wrapper {
+.one {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column; }
   .one .title-wrapper .title {
     height: 70vh;
@@ -110,40 +120,43 @@ html {
     .one .title-wrapper .title h1 {
       position: relative;
       text-align: center;
-      left: 3rem; }
+      right: 2rem; }
     .one .title-wrapper .title .hero_img {
       position: absolute; }
-
-.one h1 {
-  color: #C54E4E;
-  font-family: "Majesti-Banner", "serif";
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 80px; }
-  .one h1:before {
-    position: absolute;
-    top: -6rem;
-    right: 9.5rem;
-    z-index: -1;
-    height: 50%; }
-
-.one h2 {
-  font-size: 35px;
-  font-family: "Majesti-Banner-Light", "serif";
-  color: #BEC3F7; }
-
-.one a {
-  font-family: "Avenir";
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #C54E4E;
-  display: block;
-  text-align: center; }
-  .one a:after {
-    content: url("/assets/img/icon/icon_arrow.png");
+  .one h1 {
+    color: #C54E4E;
+    font-family: "Majesti-Banner-Medium", "serif";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 60px; }
+    .one h1:before {
+      position: absolute;
+      top: -6rem;
+      right: 9.5rem;
+      z-index: -1;
+      height: 50%; }
+  .one h2 {
+    font-size: 25px;
+    font-family: "Majesti-Banner-Light", "serif";
+    color: #BEC3F7;
     position: relative;
-    left: 10px;
-    top: 2px; }
+    right: 75px; }
+  .one .work_link {
+    font-family: "Avenir";
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #C54E4E;
+    display: block;
+    text-align: center; }
+    .one .work_link:after {
+      content: url("/assets/img/icon/icon_arrow.png");
+      position: relative;
+      left: 10px;
+      top: 2px; }
+  .one .github_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px; }
 
 .work {
   margin-left: 10rem; }
@@ -174,21 +187,21 @@ html {
         text-transform: uppercase;
         position: absolute;
         top: 4rem;
-        left: -7rem;
+        left: -6rem;
         display: block;
-        max-width: 450px; }
+        max-width: 320px; }
       .work .projects .project-wrapper img {
         max-height: 300px; }
       .work .projects .project-wrapper ul {
         color: #BEC3F7;
         text-transform: uppercase;
         position: relative;
-        left: 5rem;
-        bottom: 0.8rem; }
+        bottom: 0.8rem;
+        display: flex;
+        justify-content: space-evenly; }
         .work .projects .project-wrapper ul li {
           display: inline-block;
-          font-size: 1.2rem;
-          margin-right: 5rem; }
+          font-size: 1.2rem; }
 
 .work-nav {
   margin-left: 10rem;
@@ -249,6 +262,11 @@ body {
     list-style-type: decimal; }
   .project_text-wrapper li {
     margin: 1rem 0; }
+  .project_text-wrapper a {
+    color: #C54E4E;
+    font-weight: 700;
+    font-family: "Avenir-Bold";
+    text-decoration: none; }
 
 .project_hero {
   height: 85vh;
@@ -267,7 +285,7 @@ body {
     font-size: 5rem;
     position: absolute;
     top: 40px;
-    right: 200px; }
+    right: 150px; }
   .project_hero_thumbnail {
     height: 350px;
     width: 350px; }
@@ -370,4 +388,84 @@ body {
     top: 40px;
     text-decoration: none;
     color: rgba(247, 247, 247, 0.4); }
+
+.body {
+  height: 100vh; }
+
+.contact_content-wrapper {
+  position: relative; }
+
+.contact main {
+  font-family: "Majesti-Banner-Light", "serif";
+  color: #BEC3F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  margin: 0 200px 0 250px; }
+  .contact main p {
+    font-size: 3rem;
+    margin-bottom: 30px; }
+  .contact main a {
+    text-decoration: none; }
+  .contact main h1 {
+    color: #C54E4E;
+    font-size: 7rem;
+    margin-bottom: 70px; }
+  .contact main h2 {
+    font-size: 2.1rem;
+    max-width: 50%;
+    margin-bottom: 30px; }
+  .contact main ul li {
+    font-family: "Avenir";
+    display: inline;
+    margin-right: 15px;
+    color: #C54E4E;
+    opacity: 0.8;
+    font-size: 1.2rem; }
+
+@media screen and (max-width: 1800px) {
+  .contact main {
+    margin: 0 100px 0 150px; } }
+
+@media screen and (max-width: 1200px) {
+  .contact main {
+    margin: 0 100px; }
+    .contact main h1 {
+      font-size: 5rem; } }
+
+@media screen and (max-width: 800px) {
+  .contact main {
+    margin: 0 70px; }
+    .contact main h1 {
+      font-size: 4rem; } }
+
+@media screen and (max-width: 650px) {
+  .contact main p {
+    font-size: 2.3rem; }
+  .contact main h1 {
+    font-size: 3rem; }
+  .contact main h2 {
+    font-size: 2.3rem; } }
+
+@media screen and (max-width: 500px) {
+  .contact main p {
+    font-size: 1.5rem; }
+  .contact main h1 {
+    font-size: 2rem; }
+  .contact main h2 {
+    font-size: 1.5rem; }
+  .contact main ul li {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 350px) {
+  .contact main p {
+    font-size: 1.2rem; }
+  .contact main h1 {
+    font-size: 1.5rem; }
+  .contact main h2 {
+    font-size: 1.2rem; }
+  .contact main ul li {
+    font-size: 0.8rem; } }
 
