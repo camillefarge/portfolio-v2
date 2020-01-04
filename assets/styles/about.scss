@@ -1,0 +1,122 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 300px;
+
+    &_left {
+        grid-column: 1/2;
+        
+        
+    }
+
+    &_right {
+        margin-top: -60px;
+        grid-column: 2/2;
+    }
+
+
+
+
+    .face-wrapper {
+        position: relative;
+        margin-left: 300px;
+        
+    }
+
+    &_title {
+        font-size: 143px;
+        font-family: $primary-font;
+        color: $secondary-color;
+        position: absolute;
+        left: -159px;
+        z-index: 3;
+    }
+
+    &_face {
+        position: absolute;
+        z-index: 2;
+    }
+
+    &_big-square {
+        background-color: #AE1D1D;
+        width: 441px;
+        height: 427px;
+        position: absolute;
+        z-index: 1;
+        // opacity: 0.7;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_litle-square {
+        background-color: #C13B3B;
+        width: 314px;
+        height: 304px;
+        position: absolute;
+        left: -53px;
+        top: -50px;
+        z-index: 0;
+
+    }
+
+
+
+
+
+
+
+    &_subtitle {
+        font-size: 50px;
+        font-family: $primary-font-light;
+        color: $primary-color;
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+    }
+
+    &_text {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        line-height: 32px;
+        opacity: 0.7;
+
+        max-width: 530px;
+        margin-bottom: 100px;
+    }
+
+    &_skills-category {
+        font-size: 20px;
+        font-family: $primary-font-light;
+        color: $secondary-color;
+        text-transform: uppercase;
+
+        margin-bottom: 40px;
+
+        &_item {
+            display: inline;
+            opacity: 0.5;
+            margin-right: 40px;
+
+            &--active {
+                display: inline;
+                opacity: 1;
+            }
+        }
+    }
+
+    &_skills-list {
+        font-family: $secondary-font;
+        color: $primary-color;
+
+        &_item {
+            display: inline;
+            opacity: 0.7;
+            margin-right: 25px;
+        }        
+    }
+
+
+}
