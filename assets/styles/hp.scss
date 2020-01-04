@@ -172,20 +172,42 @@ html {
     margin-top: 25px;
 
     .github_img {
-      // position: absolute;
+      position: absolute;
       // left: 95vw;
-      // bottom: 70px;
+      height: 50px;
+      right: 100px;
+      bottom: 10px;
     }
+  }
+
+  .social {
+    list-style: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+      a {
+        text-decoration: none;
+        font-family: $primary-font-light;
+        color: $secondary-color;
+      }
+      
+    }
+    
   }
   
 }
 
 
 
-// @media (max-width: 888px) {
-//   .outer-wrapper {
-//     height: 100vh !important;
-//   }
+@media (max-width: 888px) {
+  .outer-wrapper {
+    height: 100vh !important;
+  }
+}
 
 //   .wrapper{
 //     width: (400vw + (100vh - 100vw)) !important;

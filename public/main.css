@@ -157,11 +157,32 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 25px; }
+    .one .github_link .github_img {
+      position: absolute;
+      height: 50px;
+      right: 100px;
+      bottom: 10px; }
+  .one .social {
+    list-style: none;
+    position: absolute;
+    bottom: 2rem;
+    right: 0; }
+    .one .social li {
+      display: inline-block;
+      margin-right: 2rem; }
+      .one .social li a {
+        text-decoration: none;
+        font-family: "Majesti-Banner-Light", "serif";
+        color: #BEC3F7; }
+
+@media (max-width: 888px) {
+  .outer-wrapper {
+    height: 100vh !important; } }
 
 .work-nav {
   margin-left: 10rem;
   position: absolute;
-  bottom: calc(370px + 250px);
+  top: 300px;
   z-index: 1; }
   .work-nav_type-list {
     font-family: "Majesti-Banner-Light", "serif";
@@ -170,8 +191,8 @@ html {
     display: block; }
     .work-nav_type-list li {
       display: inline-block;
-      margin-right: 6rem;
-      font-size: 2rem;
+      margin-right: 5rem;
+      font-size: 1.5rem;
       opacity: 0.3; }
     .work-nav_type-list .active {
       opacity: 1; }
@@ -197,7 +218,7 @@ html {
         display: block;
         max-width: 320px; }
       .work .projects .project-wrapper img {
-        height: 350px; }
+        height: 370px; }
       .work .projects .project-wrapper ul {
         color: #BEC3F7;
         text-transform: uppercase;
@@ -210,6 +231,8 @@ html {
           font-size: 1.2rem; }
 
 @media screen and (max-width: 1800px) {
+  .work-nav {
+    top: 200px; }
   .work .projects .project-wrapper img {
     height: 300px; } }
 
