@@ -75,24 +75,24 @@ strong {
   display: none; }
 
 nav {
+  background-color: #171717;
   z-index: 10;
-  margin-top: 2rem;
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   width: 100%; }
   nav img {
-    margin-left: 10rem;
-    position: absolute;
-    left: 0; }
+    margin-left: 10rem; }
   nav ul {
     color: white;
     list-style: none;
     display: inline;
     margin-right: 10rem;
+    margin-top: 0.6rem;
     position: absolute;
     right: 0; }
   nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 5rem;
     text-transform: uppercase;
     font-weight: 200;
@@ -392,39 +392,31 @@ body {
 .body {
   height: 100vh; }
 
+.contact_content-wrapper {
+  position: relative; }
+
 .contact main {
   font-family: "Majesti-Banner-Light", "serif";
   color: #BEC3F7;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  margin: 0 200px 0 250px; }
   .contact main p {
     font-size: 3rem;
-    margin-bottom: 30px;
-    z-index: 1;
-    position: relative; }
+    margin-bottom: 30px; }
+  .contact main a {
+    text-decoration: none; }
   .contact main h1 {
     color: #C54E4E;
     font-size: 7rem;
-    margin-bottom: 70px;
-    z-index: 1;
-    position: relative; }
+    margin-bottom: 70px; }
   .contact main h2 {
     font-size: 2.1rem;
     max-width: 50%;
-    z-index: 1;
-    position: relative;
     margin-bottom: 30px; }
-  .contact main img {
-    z-index: 0;
-    position: absolute;
-    top: 170px;
-    right: 150px;
-    height: 400px;
-    filter: grayscale(20%); }
   .contact main ul li {
     font-family: "Avenir";
     display: inline;
@@ -432,4 +424,48 @@ body {
     color: #C54E4E;
     opacity: 0.8;
     font-size: 1.2rem; }
+
+@media screen and (max-width: 1800px) {
+  .contact main {
+    margin: 0 100px 0 150px; } }
+
+@media screen and (max-width: 1200px) {
+  .contact main {
+    margin: 0 100px; }
+    .contact main h1 {
+      font-size: 5rem; } }
+
+@media screen and (max-width: 800px) {
+  .contact main {
+    margin: 0 70px; }
+    .contact main h1 {
+      font-size: 4rem; } }
+
+@media screen and (max-width: 650px) {
+  .contact main p {
+    font-size: 2.3rem; }
+  .contact main h1 {
+    font-size: 3rem; }
+  .contact main h2 {
+    font-size: 2.3rem; } }
+
+@media screen and (max-width: 500px) {
+  .contact main p {
+    font-size: 1.5rem; }
+  .contact main h1 {
+    font-size: 2rem; }
+  .contact main h2 {
+    font-size: 1.5rem; }
+  .contact main ul li {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 350px) {
+  .contact main p {
+    font-size: 1.2rem; }
+  .contact main h1 {
+    font-size: 1.5rem; }
+  .contact main h2 {
+    font-size: 1.2rem; }
+  .contact main ul li {
+    font-size: 0.8rem; } }
 
