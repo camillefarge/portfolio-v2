@@ -474,10 +474,13 @@ body {
     text-decoration: none;
     color: rgba(247, 247, 247, 0.4); }
 
+html {
+  font-size: 100%; }
+
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 100px;
   margin-top: 300px; }
   .about_left {
     grid-column: 1/2; }
@@ -488,7 +491,7 @@ body {
     position: relative;
     margin-left: 300px; }
   .about_title {
-    font-size: 143px;
+    font-size: 8.9rem;
     font-family: "Majesti-Banner", "serif";
     color: #BEC3F7;
     position: absolute;
@@ -515,30 +518,32 @@ body {
     top: -50px;
     z-index: 0; }
   .about_subtitle {
-    font-size: 50px;
+    font-size: 3.1rem;
     font-family: "Majesti-Banner-Light", "serif";
     color: #C54E4E;
     text-transform: uppercase;
     margin-bottom: 20px; }
   .about_text {
+    font-size: 1.2rem;
     font-family: "Avenir";
     color: #BEC3F7;
-    line-height: 32px;
+    line-height: 2.2rem;
     opacity: 0.7;
     max-width: 530px;
     margin-bottom: 100px; }
   .about_skills-category {
-    font-size: 20px;
+    font-size: 1.4rem;
     font-family: "Majesti-Banner-Light", "serif";
     color: #BEC3F7;
     text-transform: uppercase;
-    margin-bottom: 40px; }
+    margin-bottom: 25px; }
     .about_skills-category_item {
       display: inline;
-      opacity: 0.5;
-      margin-right: 40px; }
+      margin-right: 40px;
+      opacity: 0.5; }
       .about_skills-category_item--active {
         display: inline;
+        margin-right: 40px;
         opacity: 1; }
   .about_skills-list {
     font-family: "Avenir";
@@ -546,7 +551,113 @@ body {
     .about_skills-list_item {
       display: inline;
       opacity: 0.7;
-      margin-right: 25px; }
+      margin-right: 25px;
+      font-size: 1.1rem; }
+
+@media screen and (max-width: 1700px) {
+  .about {
+    margin-top: 200px; }
+    .about_title {
+      font-size: 7rem; }
+    .about_face {
+      width: 250px; }
+    .about_big-square {
+      width: 341px;
+      height: 327px; }
+    .about_litle-square {
+      width: 264px;
+      height: 254px; }
+    .about_subtitle {
+      font-size: 2.2rem; }
+    .about_text {
+      font-size: 1rem; } }
+
+@media screen and (max-width: 1500px) {
+  .about {
+    margin-top: 180px; }
+    .about_title {
+      font-size: 6.4rem; }
+    .about_face {
+      width: 200px; }
+    .about_big-square {
+      width: 291px;
+      height: 277px; }
+    .about_litle-square {
+      width: 234px;
+      height: 224px; }
+    .about_subtitle {
+      font-size: 1.8rem; }
+    .about_text {
+      max-width: 430px; } }
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .about_right {
+      margin-top: 25rem; }
+    .about .face-wrapper {
+      position: relative;
+      right: 7rem;
+      margin-left: 0; }
+    .about_text {
+      max-width: 530px; } }
+
+@media screen and (max-width: 650px) {
+  .about .face-wrapper {
+    position: relative;
+    right: 5rem;
+    margin-left: 0; }
+  .about_right {
+    margin: 20rem 2rem 5rem 2rem; }
+  .about_title {
+    font-size: 4.4rem;
+    left: -100px; }
+  .about_face {
+    width: 170px; }
+  .about_big-square {
+    width: 241px;
+    height: 227px; }
+  .about_litle-square {
+    width: 204px;
+    height: 194px; }
+  .about_subtitle {
+    font-size: 1.8rem; }
+  .about_text {
+    max-width: none; } }
+
+@media screen and (max-width: 450px) {
+  .about_right {
+    margin-top: 13rem; }
+  .about .face-wrapper {
+    position: relative;
+    margin-left: 0; }
+  .about_title {
+    font-size: 3.4rem;
+    left: -80px; }
+  .about_face {
+    width: 120px; }
+  .about_big-square {
+    width: 161px;
+    height: 157px; }
+  .about_litle-square {
+    width: 164px;
+    height: 154px; }
+  .about_subtitle {
+    font-size: 1.8rem; }
+  .about_text {
+    max-width: 200px;
+    font-size: 0.8rem;
+    line-height: 1.5rem; }
+  .about_skills-category {
+    font-size: 1rem; }
+  .about_skills-list_item {
+    font-size: 0.8rem; } }
 
 .body {
   height: 100vh; }
