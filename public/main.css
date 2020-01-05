@@ -477,7 +477,10 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
-  margin-top: 300px; }
+  margin-top: 300px;
+  margin-bottom: 100px; }
+  .about .op0 {
+    opacity: 0; }
   .about_left {
     grid-column: 1/2; }
   .about_right {
@@ -538,8 +541,6 @@ html {
       margin-right: 40px;
       opacity: 0.5; }
       .about_skills-category_item--active {
-        display: inline;
-        margin-right: 40px;
         opacity: 1; }
   .about_skills-list {
     font-family: "Avenir";
