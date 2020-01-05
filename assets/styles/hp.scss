@@ -1,215 +1,134 @@
-.slide {
-  width: 100vw;
-  height: calc(100vh - 70px);
-  margin-top: 70px;
-}
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw; //value is equal to total width of the content
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
 
-.one {
-  // background-color: rgb(197, 35, 35);
-}
-.two {
-  // background-color: rgb(79, 43, 207);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.three {
-  // background-color: rgb(29, 170, 71);
-}
 
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  // margin-top: 70px;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  // background-color: $black;
-  z-index: -1;
-}
-::-webkit-scrollbar {
-  display: none;
-}
 
-nav {
-  background-color: $black;
-  z-index: 10;
-  padding: 1rem 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
 
-  img {
-    margin-left: 10rem;
-    margin-top: 0.2rem;
-    height: 35px;
-    // position: absolute;
-    // left: 0;
+
+
+.hp {
+  // margin-top: 200px;
+  // background-image: url("/assets/img/logo-big.png");
+  // background-repeat: no-repeat;
+  max-height: 100vh;
+  overflow-y: hidden;
+
+  nav {
+    background-color: transparent;
   }
 
-  ul {
-    color: white;
-    list-style: none;
-    display: inline-block;
-    margin-right: 10rem;
-    margin-top: 0.6rem;
-    position: absolute;
-    right: 0;
-  }
 
-  ul li {
-    display: inline-block;
-    margin-right: 5rem;
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 1.2rem;
-    opacity: 0.7;
-
-    a {
-      color: $primary-color;
-      text-decoration: none;
-    }
-  }
-}
-
-html {
-  background-color: $black;
-}
-
-.one {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  
-  .title-wrapper {
-
-
-    .title {
-      height: 70vh;
+  &_wrapper {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column;
+      height: 100vh;
+  }
+
+  &_title {
+      font-family: $primary-font-medium;
+      color: $secondary-color;
+      font-size: 7.6rem;
+      margin-bottom: 1.2rem;
+  }
+
+  &_subtitle {
+      font-family: $secondary-font;
+      color: $secondary-color;
+      opacity: 0.5;
+      font-size: 2.5rem;
       position: relative;
-      margin-bottom: 50px;
-
-      h1 {
-        position: relative;
-        text-align: center;
-
-      }
-
-
-      //img positionné par rapport au bloc h1 h2
-      .hero_img {
-        position: absolute;
-        top: -5rem;
-        right: 9rem;
-        height: 350px;
-        
-      }
-
-      .title-text {
-        position: relative;
-      }
-
-    }
-  }
-
-  h1 {
-    color: $primary-color;
-    font-family: $primary-font;
-    text-transform: uppercase;
-    font-weight: 200;
-    // font-size: 60px;
-    font-size: 70px;
-    
+      left: 7rem;
+      letter-spacing: 0.1rem;
 
   }
 
-  h2 {
-    font-size: 30px;
-    font-family: $primary-font-light;
-    color: $secondary-color;
-    position: relative;
-    // right: 75px;
-    // right: 150px;
-  }
+  &_link {
+      font-family: $secondary-font;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: $primary-color;
+      display: block;
+      text-align: center;
 
-  .work_link {
-    font-family: $secondary-font;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: $primary-color;
-    display: block;
-    text-align: center;
-
-    &:after {
-      content: url("/assets/img/icon/icon_arrow.png");
-      position: relative;
-      left: 10px;
-      top: 2px;
-    }
-  }
-
-  .github_link {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-
-    .github_img {
       position: absolute;
-      // left: 95vw;
-      height: 50px;
-      right: 100px;
-      bottom: 10px;
-    }
-  }
-
-  .social {
-    list-style: none;
-    position: absolute;
-    bottom: 2rem;
-    right: 0;
-    
-    li {
-      display: inline-block;
-      margin-right: 2rem;
-      a {
-        text-decoration: none;
-        font-family: $primary-font-light;
-        color: $secondary-color;
-      }
-      
-    }
-    
-  }
+      bottom: 8rem;
   
-}
+      &:after {
+        content: url("/assets/img/icon/icon_arrow.png");
+        position: relative;
+        left: 10px;
+        top: 2px;
+      }
+    }
 
-
-
-@media (max-width: 888px) {
-  .outer-wrapper {
-    height: 100vh !important;
+  &_bg {
+      position: absolute;
+      top: -6rem;
+      left: -6rem;
+      height: 130vh;
+      // z-index: 0;
   }
 }
 
-//   .wrapper{
-//     width: (400vw + (100vh - 100vw)) !important;
-//   }
-// }
+
+
+@media screen and (max-width: 1800px) {
+
+  .hp {
+    &_title {
+      font-size: 7.6rem - 1.9rem;
+  }
+
+    &_subtitle {
+      font-size: 2.5rem - 0.9rem;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .hp {
+    &_title {
+      font-size: 7.6rem - 3.2rem;
+  }
+
+    &_subtitle {
+      font-size: 2.5rem - 1.3rem;
+      left: 4rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .hp {
+    &_title {
+      font-size: 7.6rem - 3.2rem;
+  }
+
+    &_subtitle {
+      font-size: 2.5rem - 1.3rem;
+      left: 4rem;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 520px) {
+  .hp {
+    &_title {
+      font-size: 7.6rem - 4.2rem;
+      max-width: 200px;
+  }
+
+    &_subtitle {
+      font-size: 2.5rem - 1.3rem;
+      left: 4rem;
+      max-width: 250px;
+    }
+  }
+
+}
