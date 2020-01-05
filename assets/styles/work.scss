@@ -1,0 +1,126 @@
+.work-nav {
+  margin-left: 10rem;
+  position: absolute;
+
+  $project-height:300px;
+//   bottom: 600px;
+// bottom: calc(370px + 150px);
+top: 300px;
+
+  z-index: 1;
+
+  &_type-list {
+    // margin-top: 8rem;
+    font-family: $primary-font-light;
+    color: $secondary-color;
+    text-transform: uppercase;
+    display: block;
+
+    li {
+      display: inline-block;
+      margin-right: 5rem;
+      // margin-bottom: 2rem;
+      font-size:1.5rem;
+    //   font-size: 2rem;
+      opacity: 0.3;
+      &::after {
+        // margin-left: 5rem;
+        // content: " - ";
+    }
+    }
+    
+
+    .active {
+      opacity: 1;
+    }
+  }
+}
+
+.work {
+  margin-left: 10rem;
+
+  .projects {
+    display: flex;
+    // position: relative;
+
+    position: absolute;
+    bottom: 110px;
+
+
+
+    .project-wrapper {
+      margin-right: 20rem;
+      position: relative;
+
+      h1 {
+        color: $primary-color;
+        font-family: $primary-font-light;
+        font-size: 3rem;
+        line-height: 3.3rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 4rem;
+        left: -6rem;
+
+        display: block;
+        max-width: 320px;
+      }
+
+      img {
+        //   max-height: 300px;
+        height: 370px;
+      }
+
+      ul {
+        color: $secondary-color;
+        text-transform: uppercase;
+        position: relative;
+        // left: 5rem;
+        bottom: 0.8rem;
+
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+          display: inline-block;
+          font-size: 1.2rem;
+          // margin-right: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1800px) {
+    .work-nav {
+
+      top: 200px;
+    }
+
+  .work {
+    .projects {
+      .project-wrapper {
+        img {
+        //   height: 300px;
+        // $project-height:300px;
+        height: 300px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+    .work {
+      .projects {
+        .project-wrapper {
+          img {
+            //   max-height: 300px;
+            // height: 300px;
+          }
+        }
+      }
+    }
+  }
