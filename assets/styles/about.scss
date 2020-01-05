@@ -2,11 +2,18 @@ html {
     font-size: 100%;
 }
 
+
 .about {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
     margin-top: 300px;
+    margin-bottom: 100px;
+
+    .op0 {
+        opacity: 0;
+    }
 
     &_left {
         grid-column: 1/2;
@@ -109,8 +116,8 @@ html {
             opacity: 0.5;
 
             &--active {
-                display: inline;
-                margin-right: 40px;
+                // display: inline;
+                // margin-right: 40px;
                 opacity: 1;
             }
         }
@@ -119,6 +126,7 @@ html {
     &_skills-list {
         font-family: $secondary-font;
         color: $primary-color;
+        
 
         &_item {
             display: inline;

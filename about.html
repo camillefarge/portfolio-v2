@@ -71,22 +71,74 @@
                 bien sûr écouter de la musique.</p>
 
             <h2 class="about_subtitle">Skills</h2>
-            <ul class="about_skills-category">
-                <li class="about_skills-category_item">
-                    UX / UI
+            <ul  id="filters" class="about_skills-category">
+                <li  data-filter=".ux" class="about_skills-category_item about_skills-category_item--active selected">
+                    UX
                 </li>
-                <li class="about_skills-category_item">
+                <li  data-filter=".ui" class="about_skills-category_item">
+                    UI
+                </li>
+                <li  data-filter=".graph" class="about_skills-category_item">
                     Graphics
                 </li>
-                <li class="about_skills-category_item--active">
+                <li   data-filter=".front" class="about_skills-category_item">
                     Front-end
                 </li>
-                <li class="about_skills-category_item">
+                <li  data-filter=".back"  class="about_skills-category_item">
                     Back-end
                 </li>
             </ul>
 
-            <ul class="about_skills-list">
+            <div class="grid">
+
+            <ul class="about_skills-list element-item  ux">
+                <li class="about_skills-list_item">
+                    Personas
+                </li>
+                <li class="about_skills-list_item">
+                    Empathy map
+                </li>
+                <li class="about_skills-list_item">
+                    Journey map
+                </li>
+                <li class="about_skills-list_item">
+                    Wireframe
+                </li>
+            </ul>
+
+
+            <ul class="about_skills-list element-item  ui op0">
+                <li class="about_skills-list_item">
+                    Adobe Xd
+                </li>
+                <li class="about_skills-list_item">
+                    Sketch
+                </li>
+                <li class="about_skills-list_item">
+                    InVision
+                </li>
+                <li class="about_skills-list_item">
+                    Atomic Design
+                </li>
+            </ul>
+
+
+            <ul class="about_skills-list  element-item  graph op0">
+                <li class="about_skills-list_item">
+                    Illustrator
+                </li>
+                <li class="about_skills-list_item">
+                    Photoshop
+                </li>
+                <li class="about_skills-list_item">
+                    InDesign
+                </li>
+                <li class="about_skills-list_item">
+                    After Effects (basic knowledge)
+                </li>
+            </ul>
+
+            <ul class="about_skills-list  element-item  front op0">
                 <li class="about_skills-list_item">
                     HTML
                 </li>
@@ -102,9 +154,47 @@
             </ul>
         </div>
 
+        </div>
+
+
+        <!-- <div id="filters" > 
+            <ul>
+<li  data-filter="*">all</li>
+<li   data-filter=".couleurs">couleurs</a>
+<li   data-filter=".nb">nb</a>
+            </ul>
+            
+        </div id="filters">
+
+        <div class="grid">
+            <div class="element-item couleurs metal wow bounceInUp" data-category="transition">
+
+            </div>
+            <div class="element-item nb wow slideInLeft" data-category="metalloid">
+                <img src="assets/img/birdlife/birdlife-thumbnail-3.png" alt="">
+
+            </div>
+            <div class="element-item nb wow hinge" data-category="post-transition">
+                <img src="assets/img/birdlife/birdlife-thumbnail-2.png" alt="">
+
+            </div>
+            <div class="element-item couleurs wow bounceInUp" data-category="post-transition">
+                <img src="assets/img/icon/icon_github.png" alt="">
+
+            </div>
+
+            <div class="element-item couleurs wow slideInLefts" data-category="post-transition">
+                <img src="assets/img/icon/icon_arrow.png" alt="">
+            </div>
+ 
+        </div> -->
     </div>
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/tilt.jquery.js"></script>
+<script src="assets/ext/isotope.pkgd.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
