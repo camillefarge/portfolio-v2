@@ -102,7 +102,45 @@ margin-top: 250px;
   //     height: 70vh !important;
   // }
 
+  .work_title {
+    position: absolute;
+    bottom: -480px;
+    left: 300px;
+    // left: 400px;
+    font-size: 200px;
+    opacity: 0.2;
+    
+    color: $secondary-color;
+  }
+
+  .outer-wrapper {
+    z-index: 2 !important;
+    width: 70vh;
+    
+    // position: relative !important;
+    // top: -10rem;
+  }
+
+  .projects {
+    margin-left: 20rem;
+  }
+
+
 @media (max-width: 1600px) {
+
+  .work_title {
+    bottom: -340px;
+    left: 200px;
+    font-size: 200px;
+
+  }
+
+  .projects {
+    margin-left: 10rem;
+  }
+
+
+
     .hp-v2 {
         &_title {
             font-size: 6rem;

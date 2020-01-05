@@ -68,7 +68,6 @@ strong {
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background-color: #171717;
   z-index: -1; }
 
 ::-webkit-scrollbar {
@@ -240,7 +239,28 @@ html {
     .work-nav-2_type-list .active {
       opacity: 1; }
 
+.work_title {
+  position: absolute;
+  bottom: -480px;
+  left: 300px;
+  font-size: 200px;
+  opacity: 0.2;
+  color: #BEC3F7; }
+
+.outer-wrapper {
+  z-index: 2 !important;
+  width: 70vh; }
+
+.projects {
+  margin-left: 20rem; }
+
 @media (max-width: 1600px) {
+  .work_title {
+    bottom: -340px;
+    left: 200px;
+    font-size: 200px; }
+  .projects {
+    margin-left: 10rem; }
   .hp-v2_title {
     font-size: 6rem; }
   .hp-v2_subtitle {
