@@ -567,7 +567,19 @@ html {
     .about_subtitle {
       font-size: 2.2rem; }
     .about_text {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+    .about_skills-category {
+      font-size: 1.1rem; }
+      .about_skills-category_item {
+        margin-right: 30px; }
+    .about_skills-list {
+      font-family: "Avenir";
+      color: #C54E4E; }
+      .about_skills-list_item {
+        display: inline;
+        opacity: 0.7;
+        margin-right: 25px;
+        font-size: 1rem; } }
 
 @media screen and (max-width: 1500px) {
   .about {
