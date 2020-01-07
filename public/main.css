@@ -60,19 +60,36 @@ nav {
     margin-top: 0.6rem;
     position: absolute;
     right: 0; }
-  nav ul li {
-    display: inline-block;
-    margin-right: 5rem;
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 1.2rem;
-    opacity: 0.7; }
-    nav ul li a {
-      color: #C54E4E;
-      text-decoration: none; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 5rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 1.2rem;
+      opacity: 0.7; }
+      nav ul li a {
+        color: #C54E4E;
+        text-decoration: none; }
+
+@media screen and (max-width: 1000px) {
+  nav img {
+    margin-left: 5rem; }
+  nav ul {
+    margin-right: 5rem; }
+    nav ul li {
+      margin-right: 3rem; } }
+
+@media screen and (max-width: 700px) {
+  nav img {
+    margin-left: 1rem; }
+  nav ul {
+    margin-right: 1rem; }
+    nav ul li {
+      font-size: 1rem;
+      margin-right: 2rem; } }
 
 .hp {
-  max-height: 100vh;
+  max-width: 100vw;
   overflow-y: hidden; }
   .hp nav {
     background-color: transparent; }
@@ -81,7 +98,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; }
+    height: 120vh;
+    background-image: url("/assets/img/logo-big.png");
+    background-repeat: no-repeat;
+    background-size: 200vh;
+    background-position-x: -3rem;
+    background-position-y: 0rem; }
   .hp_title {
     font-family: "Majesti-Banner-Medium", "serif";
     color: #BEC3F7;
@@ -147,7 +169,7 @@ nav {
 .slide {
   width: 100vw;
   height: calc(100vh - 70px);
-  margin-top: 70px; }
+  margin-top: -6rem; }
 
 .wrapper {
   display: flex;
@@ -157,7 +179,7 @@ nav {
   transform-origin: top left; }
 
 .outer-wrapper {
-  width: 80vh;
+  width: 50rem;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
@@ -232,8 +254,10 @@ nav {
     height: 300px; } }
 
 @media (max-width: 1600px) {
+  .outer-wrapper {
+    width: 40rem; }
   .work_title {
-    bottom: -340px;
+    bottom: -25rem;
     left: 200px;
     font-size: 200px; }
   .projects {
@@ -241,7 +265,7 @@ nav {
 
 @media screen and (max-width: 1400px) {
   .work_title {
-    bottom: -13rem;
+    bottom: -14rem;
     left: 10rem;
     font-size: 170px;
     opacity: 0.2;
@@ -533,7 +557,7 @@ html {
     line-height: 2.2rem;
     opacity: 0.7;
     max-width: 530px;
-    margin-bottom: 100px; }
+    margin-bottom: 80px; }
   .about_skills-category {
     font-size: 1.4rem;
     font-family: "Majesti-Banner-Light", "serif";
@@ -571,7 +595,8 @@ html {
     .about_subtitle {
       font-size: 2.2rem; }
     .about_text {
-      font-size: 1rem; }
+      font-size: 1rem;
+      margin-bottom: 60px; }
     .about_skills-category {
       font-size: 1.1rem; }
       .about_skills-category_item {
