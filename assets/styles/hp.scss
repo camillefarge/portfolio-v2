@@ -10,8 +10,17 @@
   // background-image: url("/assets/img/logo-big.png");
   // background-repeat: no-repeat;
   // max-height: 100vh;
+
+
   max-width: 100vw;
   overflow-y: hidden;
+
+  background-image: url("/assets/img/logo-big.png");
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  background-position-x: -3rem;
+  background-position-y: 0rem;
+  height: 120vh;
 
 
   // z-index: 2;
@@ -26,15 +35,10 @@
       justify-content: center;
       align-items: center;
       // height: 100vh;
-      height: 120vh;
+      height: 100vh;
 
       
-  background-image: url("/assets/img/logo-big.png");
-  background-repeat: no-repeat;
-  // background-size: 100vw;
-  background-size: 200vh;
-  background-position-x: -3rem;
-  background-position-y: 0rem;
+  
   }
 
   &_title {
